@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cloudraizeClientSide/static/css/main.81e3db61.css",
+    "main.js": "/cloudraizeClientSide/static/js/main.500e4b6a.js",
+    "static/js/453.5cac017a.chunk.js": "/cloudraizeClientSide/static/js/453.5cac017a.chunk.js",
+    "static/media/hero.jpeg": "/cloudraizeClientSide/static/media/hero.2ee1b6d2bf5272f7676a.jpeg",
+    "index.html": "/cloudraizeClientSide/index.html",
+    "main.81e3db61.css.map": "/cloudraizeClientSide/static/css/main.81e3db61.css.map",
+    "main.500e4b6a.js.map": "/cloudraizeClientSide/static/js/main.500e4b6a.js.map",
+    "453.5cac017a.chunk.js.map": "/cloudraizeClientSide/static/js/453.5cac017a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81e3db61.css",
+    "static/js/main.500e4b6a.js"
+  ]
+}
