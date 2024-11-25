@@ -1,0 +1,113 @@
+import React from 'react'
+import './generative.css';
+
+const GenerativeAI = () => {
+  return (
+    <div>
+        <section id="hero">
+        <div class="hero-container">
+            <h1>Revolutionizing Innovation with Generative AI</h1>
+            <p>At CloudRaize, we are at the forefront of the Generative AI revolution, driving creativity, innovation, and automation across industries. Our AI-driven solutions are tailored to help businesses unlock new potentials and stay ahead in a rapidly evolving market.</p>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <h2>Our Comprehensive Generative AI Service Offerings</h2>
+            <div class="service-boxes">
+                <div class="service-box">
+                    <h3>Generative Model Development</h3>
+                    <p>Build AI models using GPT, DALL-E, and Stable Diffusion to generate natural language, images, and videos. Our custom solutions cater to industries like healthcare, finance, and e-commerce.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>AI-Powered Creativity</h3>
+                    <p>Leverage AI tools to automate content creation, enhance productivity, and foster creativity in graphic design, video creation, and marketing campaigns.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Synthetic Data Generation</h3>
+                    <p>Generate synthetic data to train AI models without compromising privacy. We use GANs to simulate realistic data for more accurate model training.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Chatbots and Conversational AI</h3>
+                    <p>Create intelligent chatbots and virtual assistants for customer service and enterprise systems. Our AI-powered solutions improve engagement and enhance productivity.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Generative AI for Marketing & Advertising</h3>
+                    <p>Automate ad creation, personalize content, and optimize campaigns using Generative AI to boost marketing effectiveness and ROI.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="why-choose-us">
+    <div class="container">
+        <h2>Why Choose [Your Company Name]?</h2>
+        <p>At [Your Company Name], we’re committed to transforming businesses through innovative Generative AI solutions. Here’s why we stand out from the competition:</p>
+        <div class="why-choose-us-boxes">
+            <div class="why-box">
+                <div class="icon">
+                    <img src="./generative_images/Screenshot from 2024-11-22 10-29-27.png" alt="Expertise"/>
+                </div>
+                <h3>Industry Expertise</h3>
+                <p>With years of experience across multiple industries, we provide cutting-edge solutions designed to meet your unique business needs. Our team consists of experts in Generative AI, Cloud Computing, and Data Science, ensuring your project is in capable hands.</p>
+            </div>
+
+            <div class="why-box">
+                <div class="icon">
+                    <img src="./generative_images/Screenshot from 2024-11-22 10-30-13.png" alt="Customized Solutions"/>
+                </div>
+                <h3>Tailored Solutions</h3>
+                <p>We don’t believe in one-size-fits-all. Our solutions are customized to align with your business objectives, offering personalized strategies that deliver results. Whether you're in healthcare, finance, e-commerce, or entertainment, we’ve got you covered.</p>
+            </div>
+
+            <div class="why-box">
+                <div class="icon">
+                    <img src="./generative_images/Screenshot from 2024-11-22 10-30-29.png" alt="Track Record"/>
+                </div>
+                <h3>Proven Track Record</h3>
+                <p>Our successful projects speak for themselves. From AI-powered tools to cloud migrations, we’ve helped businesses scale efficiently and unlock their potential. Explore our success stories to see how we’ve delivered value across various sectors.</p>
+            </div>
+
+            <div class="why-box">
+                <div class="icon">
+                    <img src="./generative_images/Screenshot from 2024-11-22 10-30-40.png" alt="Comprehensive Support"/>
+                </div>
+                <h3>Comprehensive Support</h3>
+                <p>Our relationship doesn’t end with project delivery. We offer continuous support to ensure your business thrives post-launch, providing strategic guidance, troubleshooting, and performance optimization whenever needed.</p>
+            </div>
+        </div>
+        <div class="cta">
+            <h3>Ready to transform your business?</h3>
+            <p>Let’s discuss how our tailored solutions can drive your success in the digital era. <strong>Contact us today!</strong></p>
+        </div>
+    </div>
+</section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Contact us today to explore how our Generative AI solutions can take your business to the next level.</p>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required/>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    </div>
+  )
+}
+
+export default GenerativeAI

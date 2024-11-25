@@ -1,0 +1,143 @@
+import React from 'react'
+import './datascience.css';
+const DataScience = () => {
+  return (
+    <div>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Data Strategy and Consulting</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Data Strategy"/>
+                    <div class="card-content">
+                        <h3>Custom Strategies</h3>
+                        <p>Developing bespoke data strategies tailored to align with your business objectives.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Workflow Optimization"/>
+                    <div class="card-content">
+                        <h3>Workflow Optimization</h3>
+                        <p>Streamlining data processes for maximum efficiency and impact across the organization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Data Modeling and Analytics</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Predictive Modeling"/>
+                    <div class="card-content">
+                        <h3>Predictive Modeling</h3>
+                        <p>Forecasting future trends with cutting-edge regression and AI-driven analysis.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="AI Algorithms"/>
+                    <div class="card-content">
+                        <h3>AI Algorithms</h3>
+                        <p>Leveraging machine learning to deliver actionable insights and enhance innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Big Data Analytics</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Big Data Tools"/>
+                    <div class="card-content">
+                        <h3>Big Data Tools</h3>
+                        <p>Utilizing Hadoop and Spark to process vast datasets for hidden patterns.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Real-Time Insights"/>
+                    <div class="card-content">
+                        <h3>Real-Time Insights</h3>
+                        <p>Deploying analytics solutions for instant decision-making on the fly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Business Intelligence</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Interactive Dashboards"/>
+                    <div class="card-content">
+                        <h3>Interactive Dashboards</h3>
+                        <p>Creating dynamic dashboards with Power BI and Tableau to visualize data effectively.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Self-Service Analytics"/>
+                    <div class="card-content">
+                        <h3>Self-Service Analytics</h3>
+                        <p>Empowering stakeholders with easy-to-use data tools for better decision-making.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Natural Language Processing</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Chatbots"/>
+                    <div class="card-content">
+                        <h3>Advanced Chatbots</h3>
+                        <p>Deploying NLP-powered bots for seamless, intuitive customer interactions.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Text Summarization"/>
+                    <div class="card-content">
+                        <h3>Text Summarization</h3>
+                        <p>Extracting key insights from large unstructured data sets with NLP techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">AI-Powered Decision Support</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Recommendation Systems"/>
+                    <div class="card-content">
+                        <h3>Recommendation Systems</h3>
+                        <p>Enhancing user experiences with AI-driven personalized recommendations.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/400" alt="Anomaly Detection"/>
+                    <div class="card-content">
+                        <h3>Anomaly Detection</h3>
+                        <p>Identifying potential risks in real-time with intelligent monitoring systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </div>
+  )
+}
+
+export default DataScience
