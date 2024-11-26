@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cloudraizeClientSide/static/css/main.520c5470.css",
-    "main.js": "/cloudraizeClientSide/static/js/main.36ab843e.js",
-    "static/js/453.5cac017a.chunk.js": "/cloudraizeClientSide/static/js/453.5cac017a.chunk.js",
-    "static/media/hero.jpeg": "/cloudraizeClientSide/static/media/hero.2ee1b6d2bf5272f7676a.jpeg",
-    "index.html": "/cloudraizeClientSide/index.html",
-    "main.520c5470.css.map": "/cloudraizeClientSide/static/css/main.520c5470.css.map",
-    "main.36ab843e.js.map": "/cloudraizeClientSide/static/js/main.36ab843e.js.map",
-    "453.5cac017a.chunk.js.map": "/cloudraizeClientSide/static/js/453.5cac017a.chunk.js.map"
+    "main.css": "/static/css/main.520c5470.css",
+    "main.js": "/static/js/main.c54379b1.js",
+    "static/js/453.5cac017a.chunk.js": "/static/js/453.5cac017a.chunk.js",
+    "static/media/hero.jpeg": "/static/media/hero.2ee1b6d2bf5272f7676a.jpeg",
+    "index.html": "/index.html",
+    "main.520c5470.css.map": "/static/css/main.520c5470.css.map",
+    "main.c54379b1.js.map": "/static/js/main.c54379b1.js.map",
+    "453.5cac017a.chunk.js.map": "/static/js/453.5cac017a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.520c5470.css",
-    "static/js/main.36ab843e.js"
+    "static/js/main.c54379b1.js"
   ]
 }
