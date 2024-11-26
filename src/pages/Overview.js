@@ -1,154 +1,145 @@
-import React from 'react';
-import './overview.css';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {Link} from "react-router-dom"
+import { Cloud, Database, Brain, Code } from 'lucide-react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Overview = () => {
+  const heroRef = useRef(null);
+  const servicesRef = useRef(null);
+  const aboutRef = useRef(null);
+  const ctaRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(heroRef.current.children, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.2,
+        ease: 'power3.out'
+      });
+
+      gsap.from(servicesRef.current.children, {
+        scrollTrigger: {
+          trigger: servicesRef.current,
+          start: 'top center',
+        },
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        stagger: 0.2,
+      });
+
+      gsap.from(aboutRef.current.children, {
+        scrollTrigger: {
+          trigger: aboutRef.current,
+          start: 'top center',
+        },
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        stagger: 0.2,
+      });
+
+      gsap.from(ctaRef.current.children, {
+        scrollTrigger: {
+          trigger: ctaRef.current,
+          start: 'top center',
+        },
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        stagger: 0.2,
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div>
+    <div className="bg-blue-900 text-white">
       <section
-        className="hero"
-        style={{ backgroundImage: `url('./Pasted image.png')` }}
+        ref={heroRef}
+        className="relative min-h-screen flex items-center justify-center overflow-hidden"
       >
-        <div className="container">
-          <h2 className="section-title">Company Overview</h2>
-          <div className="content-box">
-            <p>
-              At CloudRaize-Elevating Expertise, we are pioneers in delivering
-              technology-driven solutions that empower businesses to innovate,
-              scale, and succeed in today’s fast-paced digital landscape. With
-              expertise spanning <strong>DevOps</strong>,{' '}
-              <strong>Cloud Computing</strong> (AWS, GCP, Azure),{' '}
-              <strong>Data Science</strong>, <strong>Data Engineering</strong>, and{' '}
-              <strong>Generative AI</strong>, we offer tailored services designed
-              to meet the unique challenges of modern enterprises.
-            </p>
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute z-0 w-auto min-w-full min-h-full max-w-none"
+        >
+          <source src="/videos/cloud-overview.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div className="z-10 text-center">
+          <h1 className="text-5xl font-bold mb-4">Welcome to CloudRaize</h1>
+          <p className="text-xl mb-8">Empowering businesses with cutting-edge cloud solutions, data science, and AI</p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="px-8 py-3 bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+              Get Started
+            </Link>
+            <Link href="/services" className="px-8 py-3 bg-white/10 rounded-lg hover:bg-white/20 transition-colors duration-200">
+              Learn More
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* Mission Section */}
-      <section id="mission">
-        <div className="container1">
-          <div className="content-box1 animate1">
-            <img src="./mission.png" alt="Our Mission" className="section-img1" />
-            <div>
-              <h2>Our Mission</h2>
-              <p>
-                At Cloud Raize, our mission is to empower businesses with{' '}
-                <strong>innovative cloud solutions</strong> and technology-driven
-                services that foster growth, accelerate{' '}
-                <strong>digital transformation</strong>, and leave a lasting
-                impact on industries. By leveraging cutting-edge technologies
-                such as <strong>DevOps services</strong>,{' '}
-                <strong>cloud computing</strong> (AWS, GCP, Azure),{' '}
-                <strong>data science</strong>, and <strong>generative AI</strong>, we
-                provide tailored strategies that help businesses innovate, scale,
-                and thrive in a competitive market.
-              </p>
+      <section id="services" className="py-16 bg-blue-800">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Our Services</h2>
+          <div ref={servicesRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Link href="/cloud-services" className="bg-white/5 p-6 rounded-lg shadow-md hover:bg-white/10 transition-colors duration-200">
+              <Cloud className="h-12 w-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-bold mb-2">Cloud Services</h3>
+              <p className="text-gray-300">Scalable and secure cloud solutions tailored to your business needs.</p>
+            </Link>
+            <Link href="/generative-ai" className="bg-white/5 p-6 rounded-lg shadow-md hover:bg-white/10 transition-colors duration-200">
+              <Code className="h-12 w-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-bold mb-2">Generative AI</h3>
+              <p className="text-gray-300">Cutting-edge AI solutions to drive innovation and automation.</p>
+            </Link>
+            <Link href="/data-science" className="bg-white/5 p-6 rounded-lg shadow-md hover:bg-white/10 transition-colors duration-200">
+              <Brain className="h-12 w-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-bold mb-2">Data Science</h3>
+              <p className="text-gray-300">Transform your data into actionable insights with advanced analytics.</p>
+            </Link>
+            <Link href="/data-engineering" className="bg-white/5 p-6 rounded-lg shadow-md hover:bg-white/10 transition-colors duration-200">
+              <Database className="h-12 w-12 text-blue-400 mb-4" />
+              <h3 className="text-xl font-bold mb-2">Data Engineering</h3>
+              <p className="text-gray-300">Build robust data pipelines and infrastructure for your organization.</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" ref={aboutRef} className="py-16 bg-blue-900">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-8 md:mb-0">
+              <img src="/images/about-us.jpg" alt="About CloudRaize" className="rounded-lg shadow-md" />
+            </div>
+            <div className="md:w-1/2 md:pl-8">
+              <h2 className="text-3xl font-bold mb-4">About CloudRaize</h2>
+              <p className="mb-4">CloudRaize is a leading provider of cloud solutions, data science, and AI services. We help businesses harness the power of cutting-edge technologies to drive growth, innovation, and efficiency.</p>
+              <p>With a team of experienced professionals and a commitment to excellence, we deliver tailored solutions that address the unique challenges of each client.</p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vision Section */}
-      <section id="vision">
-        <div className="container2">
-          <div className="content-box2 animate2">
-            <img
-              src="./data-pipeline-opt.jpg"
-              alt="Our Vision"
-              className="section-img2"
-            />
-            <div>
-              <h2>Our Vision</h2>
-              <p>
-                At Cloud Raize, we envision a future where businesses seamlessly
-                integrate <strong>cloud computing solutions</strong>,{' '}
-                <strong>AI-driven strategies</strong>, and <strong>data engineering</strong>{' '}
-                to achieve unparalleled growth. Our vision is to establish
-                ourselves as a global leader in <strong>technology consulting</strong>,
-                helping organizations across industries embrace{' '}
-                <strong>digital innovation</strong> and maintain a competitive
-                edge.
-              </p>
-            </div>
-          </div>
+      <section id="cta" ref={ctaRef} className="py-16 bg-blue-800">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+          <p className="mb-8">Discover how CloudRaize can help you leverage the power of cloud, data, and AI.</p>
+          <Link href="/contact" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors duration-200">
+            Get Started
+          </Link>
         </div>
       </section>
-
-      {/* Core Values Section */}
-      <section id="core-values">
-        <div className="container3">
-          <h2 className="section-title2">Core Values</h2>
-          <div className="core-values-container">
-            {['Innovation', 'Collaboration', 'Excellence', 'Integrity'].map((value, index) => (
-              <div className="core-value-box animate" key={index}>
-                <h3>{value}</h3>
-                <p>
-                  {/* Descriptions for each core value */}
-                  {value === 'Innovation' &&
-                    'At Cloud Raize, we prioritize staying ahead of the curve by exploring emerging trends in cloud infrastructure, DevOps automation, and AI technologies.'}
-                  {value === 'Collaboration' &&
-                    'Success is a shared journey. We partner with our clients to craft tailored cloud solutions.'}
-                  {value === 'Excellence' &&
-                    'Every project we undertake is backed by a commitment to high-quality service delivery.'}
-                  {value === 'Integrity' &&
-                    'We believe that transparency, accountability, and ethical practices form the foundation of lasting business relationships.'}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Us Section */}
-      <section id="why-choose-us">
-        <div className="container4">
-          <h2 className="section-title4">Why Choose Cloud Raize?</h2>
-          <div className="content-box animate4">
-            <img
-              src="./Adtech-cloud-migration-opt.jpg"
-              alt="Why Choose Us"
-              className="section-img"
-            />
-            <ul>
-              <li>
-                <strong>Expertise Across Domains:</strong> Deep knowledge in DevOps
-                services, cloud computing platforms like AWS, GCP, and Azure, as
-                well as generative AI and data engineering.
-              </li>
-              <li>
-                <strong>Tailored Strategies:</strong> Customized solutions to address
-                the specific challenges and opportunities in your industry.
-              </li>
-              <li>
-                <strong>Proven Track Record:</strong> We have a history of enabling
-                businesses to achieve transformative outcomes through our expertise.
-              </li>
-              <li>
-                <strong>Comprehensive Support:</strong> From strategy to execution, we
-                provide end-to-end support for your digital transformation journey.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section id="contact">
-        <div className="container5">
-          <h2 className="section-title5">Contact Us</h2>
-          <p>Ready to transform your business? Get in touch with us today!</p>
-          <form action="#" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" placeholder="Your Message" required />
-            <button type="submit">Submit</button>
-          </form>
-        </div>
-      </section>
-
-      {/* Footer */}
-      
     </div>
   );
 };

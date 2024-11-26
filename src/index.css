@@ -8,13 +8,40 @@
   }
 
   body {
-    @apply bg-gray-50;
+    @apply bg-[#050b1f];
+    background-image: 
+      radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.05) 2%, transparent 0%),
+      radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.05) 2%, transparent 0%);
+    background-size: 100px 100px;
   }
 }
 
 @layer components {
   .section-padding {
     @apply py-16 md:py-24;
+  };
+  .glass-card {
+    @apply relative overflow-hidden transition-all duration-500 hover:translate-y-[-10px];
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.02) 100%
+    );
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glass-card::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(
+      45deg,
+      rgba(56, 189, 248, 0.1),
+      rgba(59, 130, 246, 0.1)
+    );
+  }
+
+  .glass-card:hover::before {
+    @apply opacity-100;
   }
 }
 
@@ -22,4 +49,19 @@
 .fade-up {
   opacity: 0;
   transform: translateY(20px);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#050b1f];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-900 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-800;
 }

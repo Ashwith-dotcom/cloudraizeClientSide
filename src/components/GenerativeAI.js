@@ -67,7 +67,8 @@ export default function GenerativeAI() {
               <Image className="h-10 w-10 text-indigo-400 mb-4" />
               <h3 className="text-xl font-semibold text-white mb-3">Image Synthesis</h3>
               <p className="text-gray-300">
-                Create stunning visuals and artwork with AI assistance
+                Create stunning visuals and artwork
+with AI assistance
               </p>
             </div>
 

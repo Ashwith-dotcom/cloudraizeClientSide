@@ -27,11 +27,9 @@ function App() {
   }, []);
 
   return (
-    <div className="relative">
+    
        <Router>
         <Navbar/>
-        {/* <div className="mt-16"> */}
-      {/* Add margin to avoid overlapping with fixed Navbar */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/platforms" element={<Platforms />} />
@@ -48,7 +46,7 @@ function App() {
         </Routes>
         
     </Router>
-    </div>
+
   );
 }
 
