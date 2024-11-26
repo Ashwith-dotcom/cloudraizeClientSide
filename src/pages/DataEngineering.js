@@ -11,64 +11,64 @@ const DataEngineering = () => {
   const caseStudiesRef = useRef(null);
   const testimonialsRef = useRef(null);
 
-  useEffect(() => {
-    gsap.from(heroRef.current, {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      scrollTrigger: {
-        trigger: heroRef.current,
-        start: "top 80%",
-      },
-    });
+  // useEffect(() => {
+  //   gsap.from(heroRef.current, {
+  //     opacity: 0,
+  //     y: 50,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: heroRef.current,
+  //       start: "top 80%",
+  //     },
+  //   });
 
-    gsap.from(servicesRef.current.children, {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 1,
-      scrollTrigger: {
-        trigger: servicesRef.current,
-        start: "top 80%",
-      },
-    });
+  //   gsap.from(servicesRef.current.children, {
+  //     opacity: 0,
+  //     y: 50,
+  //     stagger: 0.2,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: servicesRef.current,
+  //       start: "top 80%",
+  //     },
+  //   });
 
-    gsap.from(whyChooseRef.current.children, {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 1,
-      scrollTrigger: {
-        trigger: whyChooseRef.current,
-        start: "top 80%",
-      },
-    });
+  //   gsap.from(whyChooseRef.current.children, {
+  //     opacity: 0,
+  //     y: 50,
+  //     stagger: 0.2,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: whyChooseRef.current,
+  //       start: "top 80%",
+  //     },
+  //   });
 
-    gsap.from(caseStudiesRef.current.children, {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 1,
-      scrollTrigger: {
-        trigger: caseStudiesRef.current,
-        start: "top 80%",
-      },
-    });
+  //   gsap.from(caseStudiesRef.current.children, {
+  //     opacity: 0,
+  //     y: 50,
+  //     stagger: 0.2,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: caseStudiesRef.current,
+  //       start: "top 80%",
+  //     },
+  //   });
 
-    gsap.from(testimonialsRef.current.children, {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      duration: 1,
-      scrollTrigger: {
-        trigger: testimonialsRef.current,
-        start: "top 80%",
-      },
-    });
-  }, []);
+  //   gsap.from(testimonialsRef.current.children, {
+  //     opacity: 0,
+  //     y: 50,
+  //     stagger: 0.2,
+  //     duration: 1,
+  //     scrollTrigger: {
+  //       trigger: testimonialsRef.current,
+  //       start: "top 80%",
+  //     },
+  //   });
+  // }, []);
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-[#050b1f] text-gray-100 min-h-screen">
       <section
         ref={heroRef}
         className="relative h-screen flex items-center justify-center overflow-hidden"
