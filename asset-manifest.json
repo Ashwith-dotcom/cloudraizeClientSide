@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/cloudraizeClientSide/static/css/main.520c5470.css",
-    "main.js": "/cloudraizeClientSide/static/js/main.5c41849a.js",
+    "main.css": "/cloudraizeClientSide/static/css/main.e99e8190.css",
+    "main.js": "/cloudraizeClientSide/static/js/main.31882e55.js",
     "static/js/453.5cac017a.chunk.js": "/cloudraizeClientSide/static/js/453.5cac017a.chunk.js",
+    "static/media/hero4.mp4": "/cloudraizeClientSide/static/media/hero4.d8cc520df6a8823c5415.mp4",
+    "static/media/hero.mp4": "/cloudraizeClientSide/static/media/hero.9103d635f796354491ad.mp4",
+    "static/media/vision.mp4": "/cloudraizeClientSide/static/media/vision.d9ef5769f628ce269729.mp4",
+    "static/media/mission3.mp4": "/cloudraizeClientSide/static/media/mission3.72d555e509e8338c9834.mp4",
+    "static/media/back.jpg": "/cloudraizeClientSide/static/media/back.72f1e648e67aef1886ed.jpg",
+    "static/media/img3.jpg": "/cloudraizeClientSide/static/media/img3.5fd2b6685942fa15733d.jpg",
+    "static/media/img1.jpg": "/cloudraizeClientSide/static/media/img1.35a50d29ab9213b3a969.jpg",
+    "static/media/img2.jpg": "/cloudraizeClientSide/static/media/img2.4a8c59dc117bb732fd63.jpg",
+    "static/media/img4.jpg": "/cloudraizeClientSide/static/media/img4.ad19b0cc6f97a9cbb2c6.jpg",
+    "static/media/img5.jpg": "/cloudraizeClientSide/static/media/img5.131fa54882844694ffe9.jpg",
+    "static/media/img6.jpg": "/cloudraizeClientSide/static/media/img6.6850819e5efe95a12e90.jpg",
     "static/media/hero.jpeg": "/cloudraizeClientSide/static/media/hero.2ee1b6d2bf5272f7676a.jpeg",
     "index.html": "/cloudraizeClientSide/index.html",
-    "main.520c5470.css.map": "/cloudraizeClientSide/static/css/main.520c5470.css.map",
-    "main.5c41849a.js.map": "/cloudraizeClientSide/static/js/main.5c41849a.js.map",
+    "main.e99e8190.css.map": "/cloudraizeClientSide/static/css/main.e99e8190.css.map",
+    "main.31882e55.js.map": "/cloudraizeClientSide/static/js/main.31882e55.js.map",
     "453.5cac017a.chunk.js.map": "/cloudraizeClientSide/static/js/453.5cac017a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.520c5470.css",
-    "static/js/main.5c41849a.js"
+    "static/css/main.e99e8190.css",
+    "static/js/main.31882e55.js"
   ]
 }
