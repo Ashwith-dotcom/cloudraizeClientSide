@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       textColor:{
         white: "#fff"
-      }
+      },
     },
   },
   plugins: [],
